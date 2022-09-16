@@ -1,6 +1,6 @@
 <launch>
     
-    <arg name="pcd_file" default="/home/derek/database_repo/desk.pcd" />
+    <arg name="pcd_file" default="/home/hjpark/navi_ws/src/pcd2octomap/launch/Nthing_simul.pcd" />
 
     <node pkg="pcl_ros" type="pcd_to_pointcloud" name="spawn_pcd_to_pcl" output="screen" args ="$(arg pcd_file)  0.1" >
         <param name="frame_id" value="/map" />
