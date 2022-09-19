@@ -51,6 +51,9 @@ int main( int argc, char** argv )
     for (auto p:cloud.points)
     {
         // 将点云里的点插入到octomap中
+        //fprintf(stderr,"%f ",p.z);
+        if( p.z < 0.3 ) continue;
+        if( p.z > 1 ) continue;
         tree.updateNode( octomap::point3d(p.x, p.y, p.z), true );
     }
 
