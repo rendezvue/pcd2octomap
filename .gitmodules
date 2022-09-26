@@ -1,0 +1,3 @@
+[submodule "rdv_map_files"]
+	path = rdv_map_files
+	url = https://github.com/rendezvue/rdv_map_files
